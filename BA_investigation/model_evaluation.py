@@ -16,7 +16,7 @@ classes = [
     "zwetschgen"
 ]
 
-model = load_model('obst.h5')
+model = load_model('BA_investigation/obst.h5')
 
 input_shape = model.input_shape[1:3]  # Annahme: Die Eingabegröße ist (None, 640, 480, 3)
 
@@ -30,7 +30,8 @@ def predict_image(image):
     return predicted_class, classes[predicted_class]
 
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('http://192.168.178.20:4747/video')
+# cap = cv2.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()
