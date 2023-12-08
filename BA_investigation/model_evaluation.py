@@ -16,7 +16,7 @@ classes = [
     "zwetschgen"
 ]
 
-model = load_model('BA_investigation/obst.h5')
+model = load_model('BA_investigation/og5.h5')
 
 input_shape = model.input_shape[1:3]  # Annahme: Die Eingabegröße ist (None, 640, 480, 3)
 
