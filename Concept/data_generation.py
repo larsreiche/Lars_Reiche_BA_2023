@@ -27,3 +27,5 @@ def createFileName(dirname):
 def createTrainingset():
     dirname = createFileName(dir)
     doFoto(dirname)
+
+# createTrainingset()
