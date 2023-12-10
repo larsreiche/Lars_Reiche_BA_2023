@@ -17,12 +17,13 @@ image_size = (1080 , 1920)
 # Datageneration -----------------------------
 data_generator = ImageDataGenerator(
     rescale=1./255,
-    rotation_range=20,
-    width_shift_range=0.1,
-    height_shift_range=0.1,
+    rotation_range=5,
+    width_shift_range=20,
+    height_shift_range=20,
     shear_range=0.2,
     zoom_range=0.2,
     horizontal_flip=True,
+    vertical_flip= True,
     validation_split=0.2
 )
 
@@ -44,12 +45,24 @@ validation_generator = data_generator.flow_from_directory(
 
 # Model -----------------------------
 model = Sequential()
+# -- convolutional Layers
 model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(image_size[0], image_size[1], 3)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Conv2D(64, (3, 3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Conv2D(128, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Conv2D(256, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Conv2D(32, (3, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+# -- dense Layers
 model.add(Flatten())
-model.add(Dense(64, activation='relu'))
+model.add(Dense(1024, activation='relu'))
+model.add(Dense(512, activation='relu'))
+model.add(Dense(256, activation='relu'))
 model.add(Dense(num_classes, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
