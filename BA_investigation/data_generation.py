@@ -16,7 +16,6 @@ def doFoto(url,dirname):
     else:
         print("Kamera geöffnet")
         ret, frame = cap.read()
-
         if ret:
             cv2.imwrite(dirname, frame)
             print("Foto wurde aufgenommen und gespeichert.")
