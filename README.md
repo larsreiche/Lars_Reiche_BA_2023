@@ -1,1 +1,9 @@
-# Lars_Reiche_BA_2023
+# Bachelorarbeit KI gestütze Objekterkennung
+Der hier niedergelegte Code ist Teil der Bachelorarbeit zum Thema "Optimierung des Kassiervorgangs im Lebensmitteleinzelhandel
+anhand von KI-gestützter Objekterkennung von Obst und Gemüse" von Lars Reiche.
+Inhalt dieser ist sowohl der Untersuchung zugrundeliegende Code und erhobenen Daten, als auch das daraus resultierende Konzept.
+
+
+### Inhaltsverzeichnis
+1. [Untersuchung](#untersuchung)
+2. [Konzept](#konzept)
