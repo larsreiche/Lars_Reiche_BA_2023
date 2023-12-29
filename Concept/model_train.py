@@ -4,11 +4,10 @@ import keras
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from keras.preprocessing.image import ImageDataGenerator
-import matplotlib.pyplot as plt
 
 # Anwendungsparameter --------------------------------------------
 dataset_path = '/dataset'
-num_classes = 10
+num_classes = 500
 training_epochs = 10
 # Definieren der erfassten Bildgröße
 image_size = (1080 , 1920)
