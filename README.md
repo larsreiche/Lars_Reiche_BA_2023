@@ -14,3 +14,6 @@ Inhalt dieser ist sowohl der Untersuchung zugrundeliegende Code und erhobenen Da
     * 2.2. Unterpunkt B
 3. Schluss
 
+# Untersuchung
+
+# Konzept
