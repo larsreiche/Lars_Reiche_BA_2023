@@ -5,11 +5,9 @@ Desweiteren sind folgende zusätzliche Libarys zu installieren.
 ## Inhaltsverzeichnis
 
 1. [Datenerhebung](#datenerhebung)
-    * 1.1. Unterpunkt A
-    * 1.2. Unterpunkt B
+    * 1.1. Aufbau des Systems
+    * 1.2. Erhebung der Daten
 2. [Training](#training)
-    * 2.1. Unterpunkt A
-    * 2.2. Unterpunkt B
 3. [Anwendung](#anwendung)
 
 
@@ -96,3 +94,5 @@ model.add(Dense(1024, activation='relu'))
 ```
 Je nach Bedarf können weitere Schichten hinzugefügt oder weggelassen werden. 
 Zur konkreten Anpassung ist die Dokumentation von [Keras](https://keras.io/getting_started/)   durchzulesen. 
+
+# Anwenduung
