@@ -1,6 +1,7 @@
 # Konzept Guide
-Grundlage ist für Anwendung des Konzepts ist die Instalaltion von Python 3.4
-Desweiteren sind folgende zusätzliche Libarys zu installieren. 
+Grundlage ist für Anwendung des Konzepts ist die Instalaltion von Python 3.4. 
+Das Konzept basiert auf der Grundlage der KI gestützten Objekterkennung am Beispiel von Obst und Gemüse. Dabei orientiert sich das Konzept an einer Quantität von rund 500 zu klassifizierenden Produkten.
+Mit den hier nidergelegten Schritten, soll die Umsetzung des Konzeptes realisiert werden können. Anpassungen an individuelle Bedürfnisse, technosche Vorraussetzungen oder andere Grundlagen werden nicht bedacht und sind entsprechend bei bedarf oder zu weiteren Optimierung individuel anzupassen.
 
 ## Inhaltsverzeichnis
 
@@ -39,7 +40,8 @@ Vor dem Auführen sicherstellen das die angegebene Kamera an das System angeschl
 dir = "dataset/product_name/"
 cap = cv2.VideoCapture(0) 
 ```
-*Bei Falsch ausgewählter Kamera ist über die Zahl in der Funktion zu iterieren.  
+*Bei Falsch ausgewählter Kamera ist über die Zahl in der Funktion zu iterieren.
+
 5. Automatisiertes Aufnehmen  
 Um den Ablauf der Datenerhebung nicht für jede Aufhnahme erneut zu starten, kann mittels schleifenartiger Wiederholung der Funktion createTrainingset(), automatisert werden. 
 
@@ -95,4 +97,27 @@ model.add(Dense(1024, activation='relu'))
 Je nach Bedarf können weitere Schichten hinzugefügt oder weggelassen werden. 
 Zur konkreten Anpassung ist die Dokumentation von [Keras](https://keras.io/getting_started/)   durchzulesen. 
 
-# Anwenduung
+# Anwendung
+1. Terminal Öffnen
+2. Libary downloaden
+```
+pip install Pillow
+```
+3. Angabe aller Klassennamen der verwendeten Objekte.  
+Angabe wie in der Ordnerstruktur. (meist Alphabetisch)
+```
+classes = [
+    "klasse-1",
+    "klasse-2",
+    # ....
+    "klasse-n"
+]
+```
+
+4. Sicherstellen, dass das Model und die Kamera korekt hinterlegt sind.
+```
+model = load_model('og_model.h5')
+cap = cv2.VideoCapture(0)
+```
+
+5. Ausführen

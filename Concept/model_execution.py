@@ -5,16 +5,15 @@ from PIL import Image
 
 # Anwendungsparameter-------------------------------------
 model = load_model('og_model.h5')
+cap = cv2.VideoCapture(0)
+# Alternative für DroidCam
+# cap = cv2.VideoCapture('http://172.178.178.20:4747/videoo')
 classes = [
     "klasse-1",
     "klasse-2",
     # ....
     "klasse-n"
 ]
-cap = cv2.VideoCapture(0)
-# Alternative für DroidCam
-# cap = cv2.VideoCapture('http://178.178.178.20:4747/video')
-
 
 # Klassifikation -------------------------------------------
 input_shape = model.input_shape[1:3]
