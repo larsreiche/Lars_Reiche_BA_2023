@@ -120,4 +120,4 @@ model = load_model('og_model.h5')
 cap = cv2.VideoCapture(0)
 ```
 
-5. Ausführen
+5. [model_execution.py](Concept\model_execution.py) Ausführen
