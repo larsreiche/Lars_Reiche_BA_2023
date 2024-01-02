@@ -17,7 +17,6 @@ Inhalt dieser ist sowohl der Untersuchung zugrundeliegende Code und erhobenen Da
     * 1.4. [model_train.py](Concept\model_train.py)
     * 1.4. [model_execution.py](Concept\model_execution.py)
     * 1.4. [Konzept Guide](Concept\guide.md)
-3. Schluss
 
 # Untersuchung
 Die Untersuchung befasste sich mit der Frage welchen Einfluss die Kameraposition auf die KI gestützte Objekterkennung am POS hat. Dazu wurden drei verschieden Kamerapositionen gegeneinander ealuiert. Diese waren frontal auf Produkthöhe, in einem 45 Grad Winkel und in einem 90 Grad Winkel direkt von oben über den Produkten.  
