@@ -4,7 +4,7 @@ import numpy as np
 import os 
 
 # URLs zur Verwendung der verwendeten DroidCams 
-urls = ["http://172.178.178.20:4747/video", "http://172.178.178.29:4747/video", "http://172.168.178.30:4747/video" ]
+urls = ["http://172.178.178.20:4747/video", "http://172.178.178.29:4747/video", "http://172.178.178.30:4747/video" ]
 # Ordner für Datensatz der jeweiligen KLasse
 dirs = ['kampos0/zwetschgen/','kampos1/zwetschgen/', 'kampos2/zwetschgen/']
 
